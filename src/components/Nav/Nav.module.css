@@ -1,0 +1,242 @@
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktopNav {
+  display: none;
+}
+
+.logoIcon {
+  width: 76px;
+  height: 20px;
+}
+
+.desktopList {
+  display: none;
+}
+
+.userWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.burgerBtn {
+  width: 32px;
+  height: 32px;
+}
+
+.burgerIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 218px;
+  height: 100%;
+  top: 0;
+  right: -218px;
+  padding: 28px 20px 40px 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+  background-color: #f6b83d;
+}
+
+.lightMenu {
+  background-color: #ffffff;
+}
+
+.menuOpen {
+  right: 0;
+}
+
+.crossBtn {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.crossIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.list {
+  margin: auto 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  width: 119px;
+}
+
+.defaultListItemActive {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.lightListItem {
+  border: 1px solid rgba(38, 38, 38, 0.15);
+}
+
+.lightListItemActive {
+  border: 1px solid #f6b83d;
+}
+
+.defaultListItemActive,
+.lightListItemActive {
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.29;
+  padding: 15px 0;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.lightLink {
+  color: #262626;
+}
+
+@media screen and (max-width: 218px) {
+  .menu {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+  }
+
+  .tabletWrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  .logoIcon {
+    width: 105px;
+    height: 28px;
+  }
+
+  .burgerBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .burgerIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .menu {
+    width: 374px;
+    right: -374px;
+    padding-bottom: 40px;
+  }
+
+  .menuOpen {
+    right: 0;
+  }
+
+  .crossBtn {
+    position: absolute;
+    top: 39px;
+    right: 32px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .crossIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .listItem {
+    margin-bottom: 10px;
+    width: 120px;
+  }
+
+  .link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .lightListItem {
+    border: 1px solid rgba(38, 38, 38, 0.15);
+  }
+
+  .lightLink {
+    color: #262626;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .burgerBtn {
+    display: none;
+  }
+
+  .burgerIcon {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .userWrapper {
+    display: none;
+  }
+
+  .desktopList {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .listItem {
+    width: auto;
+    margin-bottom: 0;
+    border: 1px solid rgba(38, 38, 38, 0.15);
+  }
+
+  .link {
+    padding: 15px 20px;
+    color: #262626;
+  }
+
+  .lightListItem {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .lightLink {
+    color: #ffffff;
+  }
+
+  .defaultListItemActive {
+    border: 1px solid #f6b83d;
+  }
+}

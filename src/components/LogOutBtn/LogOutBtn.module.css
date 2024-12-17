@@ -1,0 +1,48 @@
+.logOutBtn {
+  display: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 12px 0;
+  width: 178px;
+  color: #f6b83d;
+  background-color: #fff4df;
+}
+
+.lightLogOutBtn {
+  color: #ffffff;
+  background-color: #f6b83d;
+}
+
+@media screen and (max-width: 767px) {
+  .inMenu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logOutBtn {
+    display: block;
+    width: 136px;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-right: 8px;
+    padding: 15px 0;
+    color: #f6b83d;
+    background-color: #fff4df;
+  }
+
+  .lightLogOutBtn {
+    color: #ffffff;
+    background-color: #f6b83d;
+  }
+
+  .userWrapper .logOutBtn {
+    display: block;
+  }
+}

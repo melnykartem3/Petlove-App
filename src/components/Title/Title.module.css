@@ -1,0 +1,17 @@
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #262626;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: #262626;
+  }
+}

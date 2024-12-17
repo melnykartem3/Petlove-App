@@ -1,0 +1,117 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px);
+  height: 270px;
+  padding: 40px 28px 40px 28px;
+  border-radius: 30px;
+  z-index: 99999;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  width: 24px;
+  height: 24px;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #fff4df;
+}
+
+.span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-top: 20px;
+  color: #262626;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.btnApprove {
+  border-radius: 30px;
+  padding: 12px 0;
+  width: 137px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  background-color: #f6b83d;
+}
+
+.btnCancel {
+  border-radius: 30px;
+  padding: 12px 0;
+  width: 134px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #262626;
+  background-color: rgba(38, 38, 38, 0.05);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 448px;
+    height: 364px;
+    padding: 80px;
+  }
+
+  .span {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .btnApprove {
+    width: 140px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .btnCancel {
+    width: 140px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}

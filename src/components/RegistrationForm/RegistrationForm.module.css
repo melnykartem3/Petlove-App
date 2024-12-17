@@ -1,0 +1,222 @@
+.form {
+  margin-top: 20px;
+}
+
+.labelsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registerFormLabel {
+  position: relative;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.registerFormInput {
+  position: relative;
+  border-radius: 30px;
+  padding-left: 12px;
+  width: 100%;
+  height: 42px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: rgba(38, 38, 38, 0.8);
+  border: 1px solid rgba(38, 38, 38, 0.15);
+}
+
+.registerFormInput::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: rgba(38, 38, 38, 0.5);
+}
+
+.errorBorder {
+  border: 1px solid #ef2447;
+}
+
+.successBorder {
+  border: 1px solid #08aa83;
+}
+
+.iconEmail {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.iconPassword {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  right: 38px;
+}
+
+.errorText {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-top: 2px;
+  padding-left: 12px;
+  color: #ef2447;
+}
+
+.successText {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-top: 2px;
+  padding-left: 12px;
+  color: #08aa83;
+}
+
+.formBtn {
+  border-radius: 30px;
+  padding: 12px 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-top: 24px;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  background-color: #f6b83d;
+}
+
+.formBtn:hover,
+.formBtn:focus {
+  background-color: #f9b020;
+}
+
+.spanWrapper {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.formSpan {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: rgba(38, 38, 38, 0.5);
+}
+
+.loginLink {
+  position: relative;
+  font-weight: 700;
+  color: #f6b83d;
+}
+
+.loginLink::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f6b83d;
+}
+
+@media screen and (max-width: 320px) {
+  .iconEmail {
+    display: none;
+  }
+
+  .iconPassword {
+    display: none;
+  }
+
+  .eyeIcon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .labelsWrapper {
+    gap: 16px;
+  }
+
+  .registerFormInput {
+    height: 52px;
+    padding: 16px 0 16px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .registerFormInput::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .eyeIcon {
+    width: 22px;
+    height: 22px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .iconEmail {
+    width: 22px;
+    height: 22px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .iconPassword {
+    width: 22px;
+    height: 22px;
+    top: 15px;
+    right: 50px;
+  }
+
+  .errorText {
+    font-size: 12px;
+    line-height: 1.17;
+    margin-top: 4px;
+  }
+
+  .successText {
+    font-size: 12px;
+    line-height: 1.17;
+    margin-top: 4px;
+  }
+
+  .formBtn {
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .formSpan {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .formBtn {
+    margin-top: 32px;
+  }
+
+  .spanWrapper {
+    margin-top: 16px;
+  }
+}

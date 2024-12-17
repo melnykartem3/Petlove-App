@@ -1,0 +1,80 @@
+.contentWrapper {
+  border-radius: 30px;
+  background-color: #f6b83d;
+  padding: 18px 20px 50px 20px;
+}
+
+.homePageTitle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.homePageSpan {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.homePageDesc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.image {
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .contentWrapper {
+    border-radius: 60px;
+    padding: 16px 32px 44px 32px;
+  }
+
+  .homePageTitle {
+    font-size: 80px;
+    margin-top: 123px;
+    margin-bottom: 32px;
+  }
+
+  .descWrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  .homePageDesc {
+    font-size: 18px;
+    line-height: 1.22;
+    width: 255px;
+  }
+
+  .image {
+    border-radius: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contentWrapper {
+    padding: 16px 64px 32px 64px;
+  }
+
+  .secondWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .descWrapper {
+    align-items: end;
+  }
+
+  .homePageTitle {
+    font-size: 90px;
+    margin-top: 112px;
+    margin-bottom: 0;
+  }
+}

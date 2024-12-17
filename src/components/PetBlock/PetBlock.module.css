@@ -1,0 +1,70 @@
+.image {
+  border-radius: 30px;
+  min-width: 160px;
+}
+
+.cardWrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    border-radius: 60px;
+  }
+
+  .cardWrapper {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    width: 294px;
+    padding: 16px 16px 18px 16px;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+
+  .petAvatarWrapper {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #fff4df;
+  }
+
+  .descWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .nameTitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    color: #f6b83d;
+  }
+
+  .petDesc {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(38, 38, 38, 0.8);
+  }
+
+  .birthdaySpan {
+    color: #262626;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cardWrapper {
+    bottom: 97px;
+    left: 61px;
+  }
+}
